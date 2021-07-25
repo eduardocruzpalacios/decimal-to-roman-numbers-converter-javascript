@@ -16,7 +16,7 @@ function DecimalToRoman(decimal) {
     let remainder = decimal;
 
     if (remainder > 3999) {
-        return "cannot be converted because of being > 3999";
+        return "error: > 3999";
     } 
 
     
