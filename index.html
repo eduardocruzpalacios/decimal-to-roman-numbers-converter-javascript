@@ -6,11 +6,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Eduardo de la Cruz Palacios" />
-    <meta name="description" content="Roman to decimal numbers translator" />
-    <meta name="keywords" content="roman numbers, decimal numbers, translator" />
+    <meta name="description" content="Roman to decimal numbers converter" />
+    <meta name="keywords" content="roman numbers, decimal numbers, converter" />
     <meta name="copyright" content="Eduardo de la Cruz Palacios" />
     <meta name="robots" content="index, follow" />
-    <title>Roman to Decimal Numbers Translator</title>
+    <title>Roman to Decimal Numbers Converter</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
     <!-- JS -->
     <script src="app.js" defer></script>
     <!-- BOOTSTRAP4 INSTALLATION -->
@@ -22,9 +24,62 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Font Awesome kit's code -->
+    <script src="https://kit.fontawesome.com/715fda89bb.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome icons library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 </head>
 
 <body>
+    <header class="container-fluid text-light bg-dark h-25 d-flex align-items-center justify-content-center">
+        <h1>Roman to Decimal Numbers Converter</h1>
+    </header>
+
+    <section class="text-dark container-fluid row w-50 mx-auto h-50 align-items-center justify-content-center">
+
+        <div class="col-6 text-center">
+            <label for="decimal">Decimal number:</label>
+            <input type="number" name="decimal" id="decimal" class="border border-dark form-control text-center" autofocus>
+        </div>
+
+        <div class="col-6 text-center">
+            <label for="roman">Roman number:</label>
+            <input type="text" name="roman" id="roman" class="border border-dark form-control text-center" disabled>
+            
+        </div>
+
+    </section>
+
+    <footer class="container-fluid text-light bg-dark h-25 d-flex flex-column justify-content-around">
+
+        <div class="row w-50 mx-auto">
+
+            <a id="github" href="https://github.com/eduardocruzpalacios" target="_blank" title="GitHub Profile Eduardo de la Cruz Palacios" class="col-3 text-center">
+                <i class="fab fa-github fa-2x text-light"></i>
+            </a>
+
+            <a id="linkedin" href="https://www.linkedin.com/in/eduardocruzpalacios/" target="_blank" title="LinkedIn Profile Eduardo de la Cruz Palacios" class="col-3 text-center">
+                <i class="fab fa-linkedin-in fa-2x text-light"></i>
+            </a>
+
+            <a id="devto" href="https://dev.to/ikrox" target="_blank"
+                title="DEV.to Profile Eduardo de la Cruz Palacios" class="col-3 text-center">
+                <i class="fab fa-dev fa-2x text-light text-light"></i>
+            </a>
+
+            <a id="stackoverflow" href="https://stackoverflow.com/users/14817224/ikrox" target="_blank"
+                title="StackOverFlow Profile Eduardo de la Cruz Palacios" class="col-3 text-center">
+                <i class="fab fa-stack-overflow fa-2x text-light"></i>
+            </a>
+
+        </div>
+
+        <div class="row">
+            <h3 class="col-12 text-center">Eduardo de la Cruz Palacios <i class="far fa-copyright"></i> 2021</h3>
+        </div>
+        
+        
+    </footer>
 
 </body>
 
