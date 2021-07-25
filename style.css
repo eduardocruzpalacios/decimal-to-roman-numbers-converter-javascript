@@ -11,5 +11,5 @@ body {
 label,
 input[type="text"],
 input[type="number"] {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
