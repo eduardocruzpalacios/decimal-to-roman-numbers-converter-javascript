@@ -10,107 +10,96 @@ function Convert() {
 }
 
 function DecimalToRoman(decimal) {
-
-    let roman = "";
+    let roman = '';
     let quotient = decimal;
     let remainder = decimal;
 
     if (remainder > 3999) {
-        return "error: > 3999";
-    } 
-
-    
-    else if (remainder / 1000 >= 1) {
-
+        return 'error: > 3999';
+    } else if (remainder / 1000 >= 1) {
         quotient = remainder / 1000;
         remainder %= 1000;
-
         if (quotient >= 3) {
-            roman += "MMM";
+            roman += 'MMM';
         } else if (quotient >= 2) {
-            roman += "MM";
+            roman += 'MM';
         } else {
-            roman += "M";
+            roman += 'M';
         }
     }
 
     // CM - D - CD
     if (remainder / 900 >= 1) {
         remainder %= 900;
-        roman += "CM";
+        roman += 'CM';
     } else if (remainder / 500 >= 1) {
         remainder %= 500;
-        roman += "D";
+        roman += 'D';
     } else if (remainder / 400 >= 1) {
         remainder %= 400;
-        roman += "CD";
+        roman += 'CD';
     }
 
     // CCC - CC - C
     if (remainder / 100 >= 1) {
         quotient = remainder / 100;
         remainder %= 100;
-
         if (quotient >= 3) {
-            roman += "CCC";
+            roman += 'CCC';
         } else if (quotient >= 2) {
-            roman += "CC";
+            roman += 'CC';
         } else {
-            roman += "C";
+            roman += 'C';
         }
     }
 
     // XC - L - XL
     if (remainder / 90 >= 1) {
         remainder %= 90;
-        roman += "XC";
+        roman += 'XC';
     } else if (remainder / 50 >= 1) {
         remainder %= 50;
-        roman += "L";
+        roman += 'L';
     } else if (remainder / 40 >= 1) {
         remainder %= 40;
-        roman += "XL";
+        roman += 'XL';
     }
 
     // XXX - XX - X
     if (remainder / 10 >= 1) {
-
         quotient = remainder / 10;
         remainder %= 10;
-
         if (quotient >= 3) {
-            roman += "XXX";
+            roman += 'XXX';
         } else if (quotient >= 2) {
-            roman += "XX";
+            roman += 'XX';
         } else {
-            roman += "X";
+            roman += 'X';
         }
     }
 
     // IX - V - IV
     if (remainder / 9 >= 1) {
         remainder %= 9;
-        roman += "IX";
+        roman += 'IX';
     } else if (remainder / 5 >= 1) {
         remainder %= 5;
-        roman += "V";
+        roman += 'V';
     } else if (remainder / 4 >= 1) {
         remainder %= 4;
-        roman += "IV";
+        roman += 'IV';
     }
 
     // III - II - I
     if (remainder / 1 >= 1) {
-
         quotient = remainder / 1;
         remainder %= 1;
-
         if (quotient >= 3) {
-            roman += "III";
+            roman += 'III';
         } else if (quotient >= 2) {
-            roman += "II";
+            roman += 'II';
         } else {
-            roman += "I";
+            roman += 'I';
         }
     }
 
