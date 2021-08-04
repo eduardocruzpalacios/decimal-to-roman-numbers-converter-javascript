@@ -1,9 +1,9 @@
 const decimalEl = document.getElementById('decimal');
 const romanEl = document.getElementById('roman');
 
-decimalEl.addEventListener('input', Convert);
+decimalEl.addEventListener('input', ConvertAndPrint);
 
-function Convert() {
+function ConvertAndPrint() {
     const decimal = Number(decimalEl.value);
     const roman = DecimalToRoman(decimal);
     romanEl.value = roman;
