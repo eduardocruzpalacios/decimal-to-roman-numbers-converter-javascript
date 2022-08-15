@@ -1,4 +1,4 @@
-export const DecimalToRoman = decimal => {
+export const DecimalToRoman = (decimal) => {
   let roman = '';
   let quotient = decimal;
   let remainder = decimal;
@@ -93,4 +93,4 @@ export const DecimalToRoman = decimal => {
   }
 
   return roman;
-}
+};
