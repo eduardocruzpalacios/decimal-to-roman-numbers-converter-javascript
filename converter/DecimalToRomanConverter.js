@@ -3,8 +3,10 @@ export const DecimalToRoman = (decimal) => {
   let quotient = decimal;
   let remainder = decimal;
 
+  const ERROR_MESSAGE = 'number must be less than 4000';
+
   if (remainder > 3999) {
-    return 'error: > 3999';
+    return ERROR_MESSAGE;
   } else if (remainder / 1000 >= 1) {
     quotient = remainder / 1000;
     remainder %= 1000;
