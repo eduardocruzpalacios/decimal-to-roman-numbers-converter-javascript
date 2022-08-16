@@ -1,4 +1,4 @@
-import { DecimalToRoman } from './converter/converter.js';
+import { DecimalToRoman } from './converter/DecimalToRomanConverter.js';
 
 const decimalEl = document.getElementById('decimal');
 const romanEl = document.getElementById('roman');
