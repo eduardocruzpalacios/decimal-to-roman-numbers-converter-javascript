@@ -17,7 +17,6 @@ export const DecimalToRoman = (decimal) => {
     }
   }
 
-  // CM - D - CD
   if (remainder / 900 >= 1) {
     remainder %= 900;
     roman += 'CM';
@@ -29,7 +28,6 @@ export const DecimalToRoman = (decimal) => {
     roman += 'CD';
   }
 
-  // CCC - CC - C
   if (remainder / 100 >= 1) {
     quotient = remainder / 100;
     remainder %= 100;
@@ -42,7 +40,6 @@ export const DecimalToRoman = (decimal) => {
     }
   }
 
-  // XC - L - XL
   if (remainder / 90 >= 1) {
     remainder %= 90;
     roman += 'XC';
@@ -54,7 +51,6 @@ export const DecimalToRoman = (decimal) => {
     roman += 'XL';
   }
 
-  // XXX - XX - X
   if (remainder / 10 >= 1) {
     quotient = remainder / 10;
     remainder %= 10;
@@ -67,7 +63,6 @@ export const DecimalToRoman = (decimal) => {
     }
   }
 
-  // IX - V - IV
   if (remainder / 9 >= 1) {
     remainder %= 9;
     roman += 'IX';
@@ -79,7 +74,6 @@ export const DecimalToRoman = (decimal) => {
     roman += 'IV';
   }
 
-  // III - II - I
   if (remainder / 1 >= 1) {
     quotient = remainder / 1;
     remainder %= 1;
